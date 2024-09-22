@@ -1,0 +1,46 @@
+.breakfast {
+  margin-top: 170px;
+}
+.breakfast__container {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+}
+.breakfast__title {
+  font-family: $fontMain;
+font-size: 44px;
+font-weight: 600;
+line-height: 44px;
+letter-spacing: -0.02em;
+text-align: left;
+margin-bottom: 50px;
+}
+.breakfast__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 100%;
+}
+.breakfast__item {
+  background-image: url("../images/breakfast1.png");
+  background-size: auto;
+
+  max-width: 100%;
+  width: 300px;
+  height: 323px;
+  padding: 247px 16px 24px 16px;
+}
+.breakfast__text {
+font-family: $fontMain;
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: -0.23999999463558197px;
+text-align: center;
+padding: 16px 0 16px 0;
+max-width: 268px;
+background-color: $whiteColor;
+border-radius: 8px;
+}

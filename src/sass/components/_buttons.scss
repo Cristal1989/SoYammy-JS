@@ -1,0 +1,38 @@
+.btn {
+  width: 161px;
+  height: 70px;
+  border-radius: 25px 50px;
+  border: 1px solid $mainColor;
+  position: absolute;
+  left: 33%;
+  background-color: $mainColor;
+  color: #FAFAFA;
+
+  font-family: $fontMain;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+
+  &:hover{
+    background-color: $secondaryColor;
+    border: none;
+  }
+}
+
+.btn__see{
+  align-self: end;
+  margin-top: 50px;
+  width: 98px;
+  height: 38px;
+  background-color: $secondaryColor;
+  border: none;
+
+  font-family: $fontMain;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+text-align: center;
+color: $whiteColor;
+
+}

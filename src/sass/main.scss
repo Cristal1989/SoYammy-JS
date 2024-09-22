@@ -2,9 +2,11 @@
 // ===== utils =====
 @import "./utils/vars";
 @import "./utils/visually-hidden";
+@import "./utils/normalize";
 
 // ===== componets ======
-
+@import "./components/buttons";
+@import "./components/container";
 
 // ====== layout =======
 @import "./layout/header";
