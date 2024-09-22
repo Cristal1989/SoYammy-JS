@@ -1,5 +1,6 @@
 .breakfast {
   margin-top: 170px;
+  margin-bottom: 100px;
 }
 .breakfast__container {
   display: flex;
@@ -19,28 +20,55 @@ margin-bottom: 50px;
 .breakfast__list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   max-width: 100%;
 }
 .breakfast__item {
-  background-image: url("../images/breakfast1.png");
-  background-size: auto;
-
   max-width: 100%;
   width: 300px;
   height: 323px;
   padding: 247px 16px 24px 16px;
+  // padding-top: 247px;
+  border: none;
 }
 .breakfast__text {
-font-family: $fontMain;
-font-size: 16px;
-font-weight: 500;
-line-height: 20px;
-letter-spacing: -0.23999999463558197px;
-text-align: center;
+
 padding: 16px 0 16px 0;
 max-width: 268px;
 background-color: $whiteColor;
 border-radius: 8px;
+}
+
+.breakfast__link{
+  font-family: $fontMain;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.23999999463558197px;
+  text-align: center;
+  color: #3E4462;
+  border: none;
+  border-radius: 0;
+
+  &:hover{
+    color: $secondaryColor;
+  }
+  &:nth-child(1){
+  background-image: url("../images/breakfast1.png");
+  // background-size: auto;
+  background-size:auto;
+  }
+  &:nth-child(2){
+  background-image: url("../images/breakfast2.png");
+  background-size: auto;
+  }
+  &:nth-child(3){
+  background-image: url("../images/breakfast3.png");
+  background-size: auto;
+  }
+  &:nth-child(4){
+  background-image: url("../images/breakfast4.png");
+  background-size: auto;
+  }
 }
