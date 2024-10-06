@@ -1,15 +1,14 @@
 .breakfast {
-  margin-top: 170px;
-  margin-bottom: 100px;
+  margin-top: 100px;
+  // margin-bottom: 100px;
 }
 .breakfast__container {
   display: flex;
   flex-direction: column;
 }
-.container {
-}
+
 .breakfast__title {
-  font-family: $fontMain;
+font-family: $fontMain;
 font-size: 44px;
 font-weight: 600;
 line-height: 44px;
@@ -17,23 +16,24 @@ letter-spacing: -0.02em;
 text-align: left;
 margin-bottom: 50px;
 }
+
 .breakfast__list {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
   max-width: 100%;
 }
+
 .breakfast__item {
   max-width: 100%;
   width: 300px;
   height: 323px;
-  padding: 247px 16px 24px 16px;
-  // padding-top: 247px;
+  padding: 247px 15px 24px 15px;
   border: none;
 }
-.breakfast__text {
 
+.breakfast__text {
 padding: 16px 0 16px 0;
 max-width: 268px;
 background-color: $whiteColor;
@@ -49,26 +49,101 @@ border-radius: 8px;
   text-align: center;
   color: #3E4462;
   border: none;
-  border-radius: 0;
+  border-radius: 8px;
 
   &:hover{
     color: $secondaryColor;
   }
+
   &:nth-child(1){
   background-image: url("../images/breakfast1.png");
-  // background-size: auto;
-  background-size:auto;
   }
   &:nth-child(2){
-  background-image: url("../images/breakfast2.png");
-  background-size: auto;
+  background-image: url("../images/hamhock.jpg");
   }
   &:nth-child(3){
-  background-image: url("../images/breakfast3.png");
-  background-size: auto;
+  background-image: url("../images/polish.jpg");
   }
   &:nth-child(4){
-  background-image: url("../images/breakfast4.png");
-  background-size: auto;
+  background-image: url("../images/boxty.jpg");
   }
+}
+
+// ==============================miscellaneous__link
+
+.miscellaneous__link{
+  &:nth-child(1){
+  background-image: url("../images/prego_por.jpg");
+  }
+  &:nth-child(2){
+  background-image: url("../images/custard_tarts.jpg");
+  }
+  &:nth-child(3){
+  background-image: url("../images/eggs_benedict.jpg");
+  }
+  &:nth-child(4){
+  background-image: url("../images/lamb_tomatoes.jpg");
+  }
+}
+
+
+// ===========================chicken 
+.chicken__link {
+  &:nth-child(1){
+    background-image: url("../images/chicken_casserole.jpg");
+  }
+  &:nth-child(2){
+    background-image: url("../images/primavera.jpg");
+  }
+  &:nth-child(3){
+    background-image: url("../images/gratin_chicken.jpg");
+  }
+  &:nth-child(4){
+    background-image: url("../images/chicken_slaw.jpg");
+  }
+}
+// ===================== deserts
+
+.deserts__link{
+  &:nth-child(1){
+    background-image: url("../images/blackberry_fool.jpg");
+  }
+  &:nth-child(2){
+    background-image: url("../images/chip_pecan_pie.jpg");
+  }
+  &:nth-child(3){
+    background-image: url("../images/raspberry_brownies.jpg");
+  }
+  &:nth-child(4){
+    background-image: url("../images/pudding_trifle.jpg");
+  }
+}
+
+.btn__other-place {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 118px;
+}
+
+.btn__other {
+  padding: 20px 52px;
+  border: 1px solid #8BAA36;
+  border-radius: 25px 50px;
+  align-self: center;
+  font-family: $fontMain;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: #22252A;
+background-color: #fff;
+}
+
+.btn__other-img{
+  position: absolute;
+  z-index: 0;
+  top: -500%;
+  left: -15%;
 }
