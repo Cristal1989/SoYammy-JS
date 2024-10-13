@@ -1,0 +1,73 @@
+.myresipe__bg{
+  background-image: url("../images/myresipe/img__header.png");
+  margin-top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__myresipe{
+  margin: 0;
+  padding: 0;
+}
+.cookclock {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  position: absolute;
+  top: 454px;
+  left: 900px;
+}
+
+.header__myresipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.myresipe__title {
+  font-family: $fontMain;
+font-size: 44px;
+font-weight: 600;
+line-height: 44px;
+letter-spacing: -0.02em;
+text-align: left;
+color:#8BAA36;
+margin-bottom: 24px;
+}
+.myresipe__subtitle {
+  font-family: $fontMain;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: -0.02em;
+text-align: center;
+color: #23262A;
+width: 670px;
+}
+.myresipe__btn {
+  font-family: $fontMain;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: #23262A;
+padding: 18px 44px;
+margin-top: 30px;
+}
+.cookclock {
+}
+.myresipe__time {
+  margin-top: 48px;
+
+font-family: $fontMain;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: -0.23999999463558197px;
+text-align: left;
+color: #23262A;
+position: relative;
+}
