@@ -121,7 +121,6 @@ border-radius: 8px;
 }
 
 .btn__other-place {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,11 +141,6 @@ color: #22252A;
 background-color: #fff;
 }
 
-.btn__other-img{
-  position: absolute;
-  z-index: 0;
-  top: -500%;
-  left: -15%;
-}
+
 
 

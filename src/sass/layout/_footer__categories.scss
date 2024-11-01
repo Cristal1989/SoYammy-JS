@@ -1,10 +1,13 @@
 .alldishes__leaf{
   position: absolute;
   z-index: 0;
-  top: -110%;
-  left: -15%;
+  top: -29%;
+  left: -5%;
+  width: 600px;
+  height: 600px;
 }
 
 .footer__categories{
   position: relative;
+  overflow: clip;
 }
