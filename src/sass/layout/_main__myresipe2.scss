@@ -1,0 +1,28 @@
+.myresipetwo__numbers{
+  width: 320px;
+}
+
+.myresipetwo__leftarrow{
+  right: 290px;
+}
+
+.myresipetwo__btn{
+  background-color: #8BAA36;
+  border: none;
+
+  &:hover{
+    border: none;
+    background-color: #22252A;
+  }
+}
+
+.myresipe__trash{
+  background-color: #8BAA36;
+  color: #fff;
+}
+
+.favorites__items{
+  box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+  z-index: 50;
+  margin-bottom: 18px;
+}
