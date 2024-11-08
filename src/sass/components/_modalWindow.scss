@@ -63,6 +63,122 @@
     height: 468px;
 }
 
+.edit__modal{
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.editmodal__user{
+  padding: 20px;
+  width: 100px;
+  height: 100px;  
+  background-color: rgba(128,128,128,0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.edit__modal-svg{
+  width: 40px;
+  height: 40px;
+  position: relative;
+
+  opacity: 0.3;
+}
+
+.edit__modal-plus{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: $secondaryColor;
+  left: 56%;
+  top: 38%;
+  opacity: 1;
+
+  color: #fff;
+  font-family: $fontMain;
+}
+
+
+.logout__modal {
+  width: 510px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.logout__field {
+}
+.logout__text {
+  font-family: $fontMain;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: -0.02em;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #23262A;
+
+
+}
+.logout__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.logot__btn {
+  width: 192px;
+  height: 60px;
+
+   font-family: $fontMain;
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #fafafa;
+
+background-color: $secondaryColor;
+cursor: pointer;
+border-radius:8px;
+border: none;
+transition: 0.5s all ease;
+
+&:hover{
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.5)
+}
+}
+.cancel__btn {
+  margin-left: 20px;
+  background-color: #D9D9D9;
+color:#23262A;
+
+}
+
+
 .modal__close {
   position: absolute;
   top: 8px;
@@ -143,6 +259,39 @@ text-align: left;
   color: #FAFAFA;
 }
 
+.input__edit{
+ height: 40px;
+  width: 300px;
+  padding: 11px 42px;
+  outline: transparent;
+  border: 1px solid grey;
+  border-radius: 8px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #fff;
+
+    font-family: $fontMain;
+font-size: 14px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: -0.02em;
+text-align: left;
+  color: #2A2C36;
+
+  
+
+  &::placeholder{
+     font-family: $fontMain;
+font-size: 14px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: -0.02em;
+text-align: left;
+
+  color: grey;
+  opacity: 0.5;
+  }
+}
+
 .modal__form--input::placeholder {
   
   font-family: $fontMain;
@@ -159,7 +308,6 @@ text-align: left;
 
 
 
-
 .form__input--icon {
   position: absolute;
   left: 12px;
@@ -169,6 +317,14 @@ text-align: left;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.input__edit--icon{
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  fill: grey;
+  opacity: 0.7;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 .form__input--comment {
@@ -220,5 +376,30 @@ transition: 0.5s all ease;
 
 &:hover{
   background-color: #add343;
+}
+}
+
+.edit__btn{
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  background-color: $secondaryColor;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  font-family: $fontMain;
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+text-align: center;
+color: #fafafa;
+transition: 0.5s all ease;
+
+&:hover{
+  // background-color: #add343;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.5)
 }
 }

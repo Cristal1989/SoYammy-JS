@@ -8,8 +8,9 @@
 .header__container {
   display: flex;
   padding-top: 28px;
+  padding-bottom: 80px;
   position: relative;
-  z-index: 55;
+  z-index: 49;
 }
 .svg__header {
   height: 44px;
@@ -21,7 +22,7 @@
   align-items: center;
   justify-content: space-around;
   width: 800px;
- 
+
 }
 
 
@@ -56,7 +57,7 @@ text-overflow: ellipsis;
   padding: 6px;
 }
 
-.username{
+.username__link{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,6 +74,94 @@ color: $fontBlack;
   }
 }
 
+.username__form{
+  display: inline-block;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.username__form:hover .username__btn{
+  display: block;
+}
+
+.username__btn {
+  display: none;
+  position: absolute;
+  left: 1000px;
+  top: 70px;
+}
+.username__login {
+  width: 70px;
+      border-radius: 25px 50px;
+  background-color: $secondaryColor;
+  border: none;
+  padding: 5px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+
+  &:hover{
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.5)
+  }
+
+  font-family: $fontMain;
+font-size: 14px;
+font-weight: 500;
+line-height: 22.4px;
+color: $whiteColor;
+}
+.username__register {
+  font-family: $fontMain;
+font-size: 14px;
+font-weight: 500;
+line-height: 22.4px;
+color: $whiteColor;
+
+
+width: 85px;
+      border-radius: 25px 50px;
+  background-color: $secondaryColor;
+  border: none;
+  padding: 5px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+
+  &:hover{
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.5)
+  }
+}
+
+
+.username__edit {
+  padding: 18px;
+  border-radius: 16px;
+  position: absolute;
+  left: 1000;
+  top: 55px;
+  display: none;
+}
+.username__edit-list {
+  display: flex;
+  align-items: center;
+}
+.username__edit-item {
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  font-family: $fontMain;
+font-size: 14px;
+font-weight: 500;
+line-height: 22.4px;
+color: $fontBlack;
+}
+.username__edit-svg {
+  margin-left: 10px;
+}
+.username__edit-btn {
+}
+.username__register {
+}
+
 .toggle__light{
   width: 61px;
   height: 27px;
@@ -82,6 +171,13 @@ color: $fontBlack;
   align-self: center;
   padding: 3px;
   margin-left: 20px;
+  transition: 0.5s all ease-in;
+  margin-left: 55px;
+}
+.toggle__dark{
+  background-color: $secondaryColor;
+  justify-content: end;
+  transition: 0.5s all ease-in;
 }
 
 .sircle{
@@ -89,6 +185,7 @@ color: $fontBlack;
   height: 21px;
   border-radius: 50%;
   background-color: #fff;
+  box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
 }
 
 // ====================================
@@ -167,6 +264,7 @@ text-align: left;
   z-index: 50;
   border-radius: 8px;
   padding: 16px;
+  margin-bottom: 20px;
 }
 .hero__resipes-text {
   font-family: $fontMain;
