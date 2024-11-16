@@ -1,10 +1,14 @@
 .breakfast {
   margin-top: 100px;
   // margin-bottom: 100px;
+   @media screen and (max-width: $desctopScreen) {
+    margin-top: 0;
+  }
 }
 .breakfast__container {
   display: flex;
   flex-direction: column;
+  
 }
 
 .breakfast__title {
@@ -15,6 +19,14 @@ line-height: 44px;
 letter-spacing: -0.02em;
 text-align: left;
 margin-bottom: 50px;
+
+@media screen and (max-width: $tabletScreen) {
+   font-size: 28px;
+   line-height: 28px;
+  }
+  @media screen and (max-width: $tabletScreen) {
+   text-align: center;
+  }
 }
 
 .breakfast__list {
@@ -23,6 +35,12 @@ margin-bottom: 50px;
   justify-content: space-between;
 
   max-width: 100%;
+  @media screen and (max-width: $desctopScreen) {
+   flex-wrap: wrap;
+  }
+  @media screen and (max-width: $tabletScreen) {
+   justify-content: center;
+  }
 }
 
 .breakfast__item {
@@ -50,6 +68,7 @@ border-radius: 8px;
   color: #3E4462;
   border: none;
   border-radius: 8px;
+  width: 280px;
 
   &:hover{
     color: $secondaryColor;
@@ -60,12 +79,31 @@ border-radius: 8px;
   }
   &:nth-child(2){
   background-image: url("../images/hamhock.jpg");
+  @media screen and (max-width: $tabletScreen) {
+   display: none;
+  }
   }
   &:nth-child(3){
   background-image: url("../images/polish.jpg");
+  @media screen and (max-width: $desctopScreen) {
+   display: none;
+  }
   }
   &:nth-child(4){
   background-image: url("../images/boxty.jpg");
+  @media screen and (max-width: $desctopScreen) {
+   display: none;
+  }
+  }
+
+  @media screen and (max-width: $desctopScreen) {
+   width: 330px;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+  }
+  @media screen and (max-width: $tabletScreen) {
+   width: 350px;
   }
 }
 
@@ -125,6 +163,9 @@ border-radius: 8px;
   align-items: center;
   justify-content: center;
   margin-bottom: 118px;
+  @media screen and (max-width: $desctopScreen) {
+    margin-bottom: 50px;
+  }
 }
 
 .btn__other {
@@ -147,6 +188,10 @@ transition: 0.5s all ease;
   color: #fafafa;
   box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
 }
+
+@media screen and (max-width: $tabletScreen) {
+    margin-top: 20px;
+  }
 }
 
 

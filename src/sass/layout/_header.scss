@@ -3,6 +3,16 @@
   background-image: url("../images/bg2.png");
   background-repeat: no-repeat;
   background-position: 750px -100px;
+  border-radius: 20px;
+
+   @media screen and (max-width: $desctopScreen) {
+    background-position: 550px -100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (max-width: $tabletScreen) {
+    background-position: 170px -150px;
+    padding-bottom: 0;
+  }
 }
 
 .header__container {
@@ -23,12 +33,15 @@
   justify-content: space-around;
   width: 800px;
 
+ @media screen and (max-width: $desctopScreen) {
+    display: none;
+  }
 }
 
 
 .nav__link {
 font-family: $fontMain;
-font-size: 14px;
+font-size: 16px;
 font-weight: 500;
 line-height: 22.4px;
 color: $fontBlack;
@@ -64,13 +77,17 @@ text-overflow: ellipsis;
   margin-left: 60px;
 
   font-family: $fontMain;
-font-size: 14px;
+font-size: 16px;
 font-weight: 500;
 line-height: 22.4px;
 color: $fontBlack;
 
   &:hover{
     color: $secondaryColor;
+  }
+
+  @media screen and (max-width: $tabletScreen) {
+    margin-right: 10px;
   }
 }
 
@@ -173,11 +190,18 @@ color: $fontBlack;
   margin-left: 20px;
   transition: 0.5s all ease-in;
   margin-left: 55px;
+
+  @media screen and (max-width: $desctopScreen) {
+    display: none;
+  }
 }
 .toggle__dark{
   background-color: $secondaryColor;
   justify-content: end;
   transition: 0.5s all ease-in;
+  @media screen and (max-width: $desctopScreen) {
+    display: none;
+  }
 }
 
 .sircle{
@@ -193,6 +217,9 @@ color: $fontBlack;
 .hero {
   margin-top: 162px;
   margin-bottom: 100px;
+  @media screen and (max-width: $tabletScreen) {
+    margin-top: 0;
+  }
 }
 .hero__container {
   display: flex;
@@ -207,8 +234,17 @@ font-weight: 400;
 line-height: 100px;
 letter-spacing: -0.005em;
 color: $mainColor;
+z-index: 50;
 
 margin-bottom: 14px;
+
+ @media screen and (max-width: $desctopScreen) {
+    font-size: 72px;
+  }
+  @media screen and (max-width: $tabletScreen) {
+    font-size: 60px;
+    text-align: center;
+  }
 }
 .hero__title-green {
   color:$secondaryColor;
@@ -224,12 +260,26 @@ color: $fontBlack;
 max-width: 465px;
 max-height: 72px;
 margin-bottom: 50px;
+z-index: 50;
+
+ @media screen and (max-width: $desctopScreen) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: $tabletScreen) {
+    text-align: center;
+    margin-bottom: 157px;
+  }
 }
 .hero__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+@media screen and (max-width: $tabletScreen) {
+    flex-direction: column-reverse;
+
+  }
+  
 }
 .hero__input {
   width: 510px;
@@ -238,7 +288,6 @@ margin-bottom: 50px;
   border: 1px solid rgb(240, 240, 240);
   outline: none;
   padding-left: 50px;
-  position: relative;
 
   font-family: $fontMain;
 font-size: 16px;
@@ -255,6 +304,14 @@ text-align: left;
     text-align: left;
     color: #BDBDBD;
   }
+
+   @media screen and (max-width: $desctopScreen) {
+    width: 360px;
+  }
+}
+
+.input__place{
+  position: relative;
 }
 
 .hero__resipes {
@@ -265,6 +322,9 @@ text-align: left;
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 20px;
+  @media screen and (max-width: $tabletScreen) {
+    margin-bottom: 115px;
+  }
 }
 .hero__resipes-text {
   font-family: $fontMain;
@@ -274,7 +334,11 @@ line-height: 20px;
 letter-spacing: -0.23999999463558197px;
 text-align: left;
 color: #3E4462;
+z-index: 50;
 
+@media screen and (max-width: $tabletScreen) {
+    font-size: 12px;
+  }
 
 & span{
   color: $secondaryColor;
@@ -311,6 +375,17 @@ gap: 5px;
   top: -10%;
   right: 10px;
   z-index: 5;
+
+  @media screen and (max-width: $desctopScreen) {
+    width: 550px;
+    height: 800px;
+  }
+
+  @media screen and (max-width: $tabletScreen) {
+    top: 8%;
+    right: -50px;
+  }
+
 }
 .hero__bgsmooth {
  width: 438px;
@@ -328,4 +403,17 @@ gap: 5px;
   top: 21%;
   right: 400px;
   z-index: 10;
+
+  @media screen and (max-width: $desctopScreen) {
+    width: 350px;
+    height: 350px;
+
+    top: 35%;
+    right: 15%;
+  }
+  @media screen and (max-width: $tabletScreen) {
+   top: 47%;
+   right: 25%;
+  }
 }
+

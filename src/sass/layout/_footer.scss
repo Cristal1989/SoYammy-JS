@@ -1,21 +1,50 @@
 .footer {
   background-color: #22252A;
   padding: 60px 0;
+  position: relative;
+@media screen and (max-width: $tabletScreen) {
+   padding-bottom: 20px;
+   display: flex;
+align-items: center;
+flex-direction: column;
+  }
+
 }
 .footer__container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+  @media screen and (max-width: $desctopScreen) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+  }
+
+  @media screen and (max-width: $tabletScreen) {
+   grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.5fr 1.5fr 0.5fr;
+  }
+  
 }
+
+
 
 .yammy__footer {
   display: flex;
   flex-direction: column;
+  
 }
 .yammy__footer-text {
   display: flex;
   align-items: center;
   margin-bottom: 48px;
   z-index: 50;
+  
+  @media screen and (max-width: $tabletScreen){
+    justify-content: center;
+    margin-bottom: 0;
+  }
 }
 
 .yammy__footer-text p{
@@ -27,10 +56,10 @@ letter-spacing: 0.015em;
 text-align: left;
 margin-left: 12px;
 color: $grayColor;
+
 }
 
-.yammy__footer-logo {
-}
+
 .yammy__footer-list {
   z-index: 50;
 }
@@ -45,12 +74,24 @@ margin-bottom: 12px;
 list-style: disc;
 margin-left: 4px;
 color: $grayColor;
+
+@media screen and (max-width: $tabletScreen){
+    display: none;
+  }
 }
 .social__footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+   @media screen and (max-width: $desctopScreen) {
+    padding-left: 130px;
+  }
+  @media screen and (max-width: $tabletScreen){
+    padding-left: 0;
+    text-align: center;
+  }
 }
 .sicial__footer-list {
   display: flex;
@@ -64,6 +105,7 @@ margin-bottom: 24px;
 &:last-child{
   margin-bottom: 95px;
 }
+
 }
 
 .sicial__footer-link{
@@ -78,11 +120,26 @@ color: $grayColor;
 &:hover{
   color: #8BAA36;
 }
+ @media screen and (max-width: $desctopScreen) {
+    font-size: 18px;
+  }
 }
 
 .subscribe__footer {
   display: flex;
   flex-direction: column;
+  width: 330px;
+
+   @media screen and (max-width: $desctopScreen) {
+  grid-column: span 2 / span 2;
+  align-self: center;
+  justify-self: center;
+  }
+
+  @media screen and (max-width: $tabletScreen){
+    grid-column: auto;
+  }
+  
 }
 .subscribe__footer-title {
   font-family: $fontMain;
@@ -92,6 +149,10 @@ line-height: 27px;
 text-align: left;
 color: $grayColor;
 margin-bottom: 14px;
+
+@media screen and (max-width: $desctopScreen) {
+   display: none;
+  }
 }
 .subscribe__footer-subtitle {
   font-family: $fontMain;
@@ -102,6 +163,10 @@ letter-spacing: -0.02em;
 text-align: left;
 color: $grayColor;
 margin-bottom: 28px;
+
+@media screen and (max-width: $desctopScreen) {
+   display: none;
+  }
 }
 .subscribe__footer-input {
 padding: 18px 71px;
@@ -133,7 +198,14 @@ letter-spacing: -0.02em;
 text-align: left;
 color: $grayColor;
 background-color: #22252A;
+@media screen and (max-width: $desctopScreen) {
+   font-size: 16px;
   }
+  }
+@media screen and (max-width: $desctopScreen) {
+   padding: 14px 69px;
+  }
+
 }
 .subscribe__footer-btn {
   font-family: $fontMain;
@@ -146,7 +218,13 @@ padding: 21px 126px;
 background-color: #8BAA36;
 margin-top: 16px;
 border: none;
+border-radius: 8px;
 cursor: pointer;
+
+@media screen and (max-width: $desctopScreen) {
+   padding: 16px 50px;
+   
+  }
 }
 
 

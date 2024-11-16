@@ -5,6 +5,11 @@
   left: -5%;
   width: 600px;
   height: 600px;
+
+  @media screen and (max-width: $tabletScreen) {
+     top: -19%;
+  left: -15%;
+  }
 }
 
 .footer__categories{

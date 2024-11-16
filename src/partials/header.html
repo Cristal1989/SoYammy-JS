@@ -1,4 +1,4 @@
-<header class="header container">
+<header class="header">
   <div class="container header__container">
     <div>
       <a href="./index.html"
@@ -55,6 +55,16 @@
     <div class="toggle__light toggle__dark">
       <div class="sircle"></div>
     </div>
+    <button
+      class="menu__btn js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="menu__btn--icon" width="40" height="40">
+        <use href="./images/svg/icons.svg#menu-btn"></use>
+      </svg>
+    </button>
   </div>
   <!--//================= Modal window Registration=================//-->
   <div class="backdrop is-hidden" data-modal1>
@@ -253,6 +263,48 @@
       </form>
     </div>
   </div>
+  <!-- ===================== burger ============================== -->
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu__btn menu-toggle js-close-menu">
+      <svg class="menu__btn--icon" width="40" height="40">
+        <use href="./images/svg/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="burger__icon-place">
+      <a href="./index.html"
+        ><img src="./images/svg/logo.svg" alt="" class="svg__header"
+      /></a>
+    </div>
+    <ul class="nav__burger">
+      <li class="nav__list nav__list-burger">
+        <a class="nav__link-burger" href="./categories.html">Categories</a>
+      </li>
+      <li class="nav__list nav__list-burger">
+        <a class="nav__link-burger" href="./add_resipe.html">Add recipes</a>
+      </li>
+      <li class="nav__list nav__list-burger">
+        <a class="nav__link-burger" href="./my_resipes.html">My recipes</a>
+      </li>
+      <li class="nav__list nav__list-burger">
+        <a class="nav__link-burger" href="./favorites.html">Favorites</a>
+      </li>
+      <li class="nav__list nav__list-burger">
+        <a class="nav__link-burger" href="shopping.html">Shopping list</a>
+      </li>
+      <li class="nav__list svg__nav">
+        <a class="nav__link-burger" href="search.html"
+          ><img class="burger__search" src="./images/svg/search.svg" alt="" />
+          Search</a
+        >
+      </li>
+    </ul>
+    <div class="toggle__light toggle__dark toggle__burger">
+      <div class="sircle"></div>
+    </div>
+    <img class="burger__leaf" src="./images/leaf.png" alt="" />
+  </div>
+  <!-- ============================== -->
   <section class="hero">
     <div class="hero__container container">
       <h3 class="hero__title">
@@ -263,8 +315,10 @@
         You can add your own recipes to save them for the future.
       </p>
       <div class="hero__content">
-        <input class="hero__input" type="text" placeholder="Beef |" />
-        <button class="btn" type="submit">Search</button>
+        <div class="input__place">
+          <input class="hero__input" type="text" placeholder="Beef |" />
+          <button class="btn" type="submit">Search</button>
+        </div>
         <div class="hero__resipes">
           <p class="hero__resipes-text">
             <span>Delicious and healthy</span> way to enjoy a variety of fresh
@@ -279,7 +333,6 @@
       <img class="hero__dish" src="./images/dish.png" alt="" class="dish" />
       <img class="hero__leaf" src="./images/leaf.png" alt="" class="leaf" />
       <img class="hero__bgsmooth" src="./images/smooth_leaf.png" alt="" />
-      <img class="hero__arrowresipe" src="./images/arrow_resipe.png" alt="" />
     </div>
   </section>
 </header>
