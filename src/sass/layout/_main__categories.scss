@@ -16,6 +16,15 @@ text-align: left;
 color: #001833;
 
 margin-bottom: 100px;
+ @media screen and (max-width: $desctopScreen) {
+     font-size: 32px;
+     line-height: 32px;
+     margin-bottom: 50px;
+  }
+  @media screen and (max-width: $tabletScreen) {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .categories__list {
@@ -26,8 +35,49 @@ margin-bottom: 50px;
 border-bottom: 1px solid #BDBDBD;
 
 z-index: 50;
-}
+@media screen and (max-width: $desctopScreen) {
+    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
 
+     border: none;
+     padding: 10px 0;
+  }
+  @media screen and (max-width: $tabletScreen) {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+.categories__item{
+
+  @media screen and (max-width: $tabletScreen) {
+    &:nth-child(5){
+      grid-row-start: 2;
+    }
+    &:nth-child(6){
+      grid-row-start: 3;
+      grid-column: 3;
+    }
+    &:nth-child(7){
+      grid-row-start: 2;
+    }
+    &:nth-child(8){
+      grid-row-start: 2;
+    }
+    &:nth-child(9){
+      grid-row-start: 2;
+      grid-column: 3;
+    }
+    &:nth-child(10){
+      grid-row-start: 3;
+    }
+    &:nth-child(11){
+      grid-row-start: 3;
+    }
+  }
+}
 .categories__link{
   font-family: $fontMain;
 font-size: 18px;
@@ -36,6 +86,11 @@ line-height: 18px;
 text-align: left;
 color: #BDBDBD;
 
+
+@media screen and (max-width: $tabletScreen) {
+  font-size: 16px;
+  line-height: 16px;
+  }
 &:hover{
   color: #8BAA36;
 }
@@ -52,6 +107,15 @@ position: relative;
   border-radius: 2px;
   transform: scaleX(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: $desctopScreen) {
+     display: none;
+  }
+  }
+}
+
+.categories__link:active{
+  @media screen and (max-width: $tabletScreen) {
+    color: #8BAA36;
   }
 }
 
@@ -70,6 +134,13 @@ position: relative;
   flex-wrap: wrap;
   position: relative;
   max-width: 100%;
+
+  @media screen and (max-width: $desctopScreen) {
+justify-content: space-around;
+  }
+  @media screen and (max-width: $tabletScreen) {
+    
+  }
 }
 
 .alldishes__link{
@@ -85,6 +156,38 @@ position: relative;
 
   margin-bottom: 100px;
   transition: 0.5s all ease;
+  @media screen and (max-width: $desctopScreen) {
+&:nth-child(7){
+ display: none;
+  }
+&:nth-child(8){
+ display: none;
+  }
+&:nth-child(9){
+ display: none;
+  }
+&:nth-child(10){
+ display: none;
+  }
+&:nth-child(11){
+ display: none;
+  }
+&:nth-child(12){
+ display: none;
+  }
+&:nth-child(13){
+ display: none;
+  }
+&:nth-child(14){
+ display: none;
+  }
+&:nth-child(15){
+ display: none;
+  }
+&:nth-child(16){
+ display: none;
+  }
+  }
 
   &:hover{
     color: $secondaryColor;
@@ -138,5 +241,6 @@ position: relative;
   &:nth-child(16){
     background-image: url("../images/pudding_trifle.jpg");
   }
+  
 }
 
