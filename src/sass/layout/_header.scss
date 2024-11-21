@@ -26,7 +26,11 @@
   height: 44px;
   width: 44px;
   margin-right: 187px;
+   @media screen and (max-width: $mobileScreen) {
+    margin-right: 100px;
+  }
 }
+
 .nav {
   display: flex;
   align-items: center;
