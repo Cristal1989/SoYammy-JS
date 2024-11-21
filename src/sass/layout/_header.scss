@@ -377,13 +377,14 @@ gap: 5px;
   z-index: 5;
 
   @media screen and (max-width: $desctopScreen) {
-    width: 550px;
+    // max-width: 550px;
     height: 800px;
   }
 
   @media screen and (max-width: $tabletScreen) {
-    top: 8%;
-    right: -50px;
+    // top: 8%;
+    // right: -50px;
+    display: none;
   }
 
 }
