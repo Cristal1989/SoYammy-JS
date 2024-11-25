@@ -350,6 +350,13 @@ margin-right: 35px;
   margin-right: 35px;
   transition: 0.5s all ease;
   cursor: pointer;
+  font-family: $fontMain;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  z-index: 55; 
+  transition: all 0.5s ease;
 
 
   &:hover{

@@ -157,6 +157,7 @@ justify-content: space-around;
   margin-bottom: 100px;
   transition: 0.5s all ease;
   @media screen and (max-width: $desctopScreen) {
+    margin-bottom: 50px;
 &:nth-child(7){
  display: none;
   }

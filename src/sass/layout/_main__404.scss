@@ -7,6 +7,9 @@
 
 .errorpage__img {
   margin-bottom: 32px;
+  @media screen and (max-width: $tabletScreen) {
+    width: 100%;
+  }
 }
 .errorpage__title {
   font-family: $fontMain;

@@ -13,12 +13,23 @@ font-weight: 500;
 line-height: 24px;
 letter-spacing: -0.23999999463558197px;
 color: #3E4462;
+@media screen and (max-width: $tabletScreen) {
+   margin-left: 30px;
+   margin-right: 20px;
+  }
 }
 
 .shoping__item{
   background-color: #fff;
 
 box-shadow: 1px 4px 5px rgba(0,0,0,0.1);
+
+}
+
+.number__shoping{
+  @media screen and (max-width: $tabletScreen) {
+   margin-right: 30px;
+  }
 }
 
 .shoping__img{
@@ -26,9 +37,18 @@ box-shadow: 1px 4px 5px rgba(0,0,0,0.1);
 width: 120px;
 height: 120px;
 border-radius: 8px;
-padding: 10px;
+margin-left: 10px;
 }
 
 .shoping__placeone{
   margin-left: 10px;
+}
+
+.shoping__select:last-child{
+  margin-left: 105px;
+  margin-right: 10px;
+  @media screen and (max-width: $tabletScreen) {
+   margin-left: 10px;
+   margin-right: 5px;
+  }
 }

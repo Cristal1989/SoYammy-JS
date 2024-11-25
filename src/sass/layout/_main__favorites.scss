@@ -185,6 +185,9 @@ color: #3E4462;
   z-index: 50;
   border-radius: 20px;
   margin-bottom: 15px;
+  @media screen and (max-width: $tabletScreen) {
+    width: 330px;
+  }
 }
 .favorites__numbers-item{
   margin: 0 5px;
@@ -195,6 +198,22 @@ color: #3E4462;
 &:active{
   border-radius: 50%;
   background-color: #EBF3D4;
+}
+
+&:nth-child(8){
+  @media screen and (max-width: $tabletScreen) {
+    display: none;
+  }
+}
+&:nth-child(9){
+  @media screen and (max-width: $tabletScreen) {
+    display: none;
+  }
+}
+&:nth-child(10){
+  @media screen and (max-width: $tabletScreen) {
+    display: none;
+  }
 }
 }
 .favorites__numbers-link {
@@ -214,6 +233,9 @@ color: #3E4462;
   top: 18px;
   right: 445px;
   cursor: pointer;
+  @media screen and (max-width: $tabletScreen) {
+    right: 300px;
+  }
 }
 
 .favorites__numbers-rightarrow{

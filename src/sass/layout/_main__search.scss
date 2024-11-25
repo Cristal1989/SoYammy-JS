@@ -3,8 +3,9 @@
   flex-direction: column;
   align-items: center;
 }
-.search__input {
+.search__input-place {
   margin-bottom: 28px;
+  // position: relative;
 }
 
 .search__title{
@@ -13,13 +14,24 @@
 }
 
 .btn__search {
-  left: 1110px;
+  // left: 1110px;
+  position: absolute;
+}
+
+.input__search{
+  @media screen and (max-width: $desctopScreen) {
+    width: 420px;
+  }
 }
 .search__field {
   display: flex;
   align-items: center;
 
   margin-bottom: 100px;
+
+  @media screen and (max-width: $desctopScreen) {
+    margin-bottom: 50px;
+  }
 }
 .searh__text {
   margin-right: 15px;
@@ -28,12 +40,11 @@
 font-size: 18px;
 font-weight: 500;
 line-height: 24px;
-letter-spacing: -0.23999999463558197px;
+letter-spacing: 0.3px;
 text-align: left;
 color: #001833;
 }
-.form__engridients-select {
-}
+
 .searchtype {
   width: 130px;
   height: 50px;
