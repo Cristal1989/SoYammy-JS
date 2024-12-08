@@ -64,12 +64,19 @@ text-overflow: ellipsis;
 }
 .nav__link.dark__theme {
   color: white;
+  &:hover{
+    color: $secondaryColor;
+  }
 }
 
 
 .svg__nav {
-  color: $secondaryColor;
-  fill: $secondaryColor;
+  fill: $mainColor;
+  cursor: pointer;
+
+  &.dark__theme{
+    fill: $secondaryColor;
+  }
 }
 
 .iconuser__start{
@@ -81,10 +88,10 @@ text-overflow: ellipsis;
   padding: 6px;
 
   &.dark__theme{
-    @media screen and (max-width: $desctopScreen) {
+
       border: 1px solid white;
       background-color: #fff;
-  }
+  
   }
 }
 
@@ -110,9 +117,7 @@ color: $fontBlack;
   }
 
   &.dark__theme{
-    @media screen and (max-width: $desctopScreen) {
-      color: white;
-  }
+      color: $secondaryColor;
   }
 }
 

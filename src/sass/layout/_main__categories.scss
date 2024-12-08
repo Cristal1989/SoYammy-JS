@@ -15,6 +15,10 @@ letter-spacing: -0.02em;
 text-align: left;
 color: #001833;
 
+&.dark__theme{
+  color: white;
+}
+
 margin-bottom: 100px;
  @media screen and (max-width: $desctopScreen) {
      font-size: 32px;
@@ -156,6 +160,11 @@ justify-content: space-around;
 
   margin-bottom: 100px;
   transition: 0.5s all ease;
+
+  &.dark__theme{
+    color: #fff;
+  }
+
   @media screen and (max-width: $desctopScreen) {
     margin-bottom: 50px;
 &:nth-child(7){
