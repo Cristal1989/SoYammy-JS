@@ -9,6 +9,10 @@ align-items: center;
 flex-direction: column;
   }
 
+  &.dark__theme{
+    background-color: $secondaryColor;
+    opacity: 0.9;
+  }
 }
 .footer__container {
   display: grid;
@@ -121,6 +125,10 @@ color: $grayColor;
  @media screen and (max-width: $desctopScreen) {
     font-size: 18px;
   }
+
+  &.dark__theme{
+    color: #fff;
+  }
 }
 
 .subscribe__footer {
@@ -167,7 +175,7 @@ margin-bottom: 28px;
   }
 }
 .subscribe__footer-input {
-padding: 18px 71px;
+padding: 18px 61px;
 border: 1px solid #FAFAFA;
 border-radius: 8px;
 background-color: #22252A;
@@ -184,6 +192,15 @@ background-position-x: 8%;
 background-position-y: 50%;
 opacity: 0.7;
 
+
+&.dark__theme{
+  background-color: transparent;
+  outline: none;
+  &:hover{
+    border: 1px solid #ffffffaf;
+  }
+}
+
 &:hover{
   border: 1px solid #8BAA36;
 }
@@ -195,7 +212,7 @@ line-height: 27px;
 letter-spacing: -0.02em;
 text-align: left;
 color: $grayColor;
-background-color: #22252A;
+background-color: transparent;
 @media screen and (max-width: $desctopScreen) {
    font-size: 16px;
   }
@@ -218,10 +235,19 @@ margin-top: 16px;
 border: none;
 border-radius: 8px;
 cursor: pointer;
+transition: 0.5s all ease;
 
 @media screen and (max-width: $desctopScreen) {
    padding: 16px 50px;
    
+  }
+
+  &.dark__theme{
+    background-color: $mainColor;
+
+    &:hover{
+      color: $secondaryColor;
+    }
   }
 }
 

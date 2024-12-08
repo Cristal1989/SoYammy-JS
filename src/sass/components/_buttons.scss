@@ -2,7 +2,10 @@
   width: 161px;
   height: 70px;
   border-radius: 25px 50px;
-  border: 1px solid $mainColor;
+  border: none;
+  outline: none;
+
+  
   
   position: absolute;
   right: 0;
@@ -21,6 +24,16 @@
   &:hover{
     background-color: $secondaryColor;
     border: none;
+  }
+
+  &.dark__theme{
+    background-color: $secondaryColor;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+
+    &:hover{
+    background-color: #7f9936;
+    border: none;
+  }
   }
 }
 

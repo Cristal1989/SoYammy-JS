@@ -52,7 +52,7 @@
       </div>
     </div>
 
-    <div class="toggle__light toggle__dark">
+    <div class="toggle__light" id="light__theme-btn" onclick="changeTheme()">
       <div class="sircle"></div>
     </div>
     <button
@@ -61,7 +61,12 @@
       aria-expanded="false"
       aria-controls="mobile-menu"
     >
-      <svg class="menu__btn--icon" width="40" height="40">
+      <svg
+        class="menu__btn--icon menu__btn-menu"
+        width="40"
+        height="40"
+        fill="none"
+      >
         <use href="./images/svg/icons.svg#menu-btn"></use>
       </svg>
     </button>
@@ -299,7 +304,11 @@
         >
       </li>
     </ul>
-    <div class="toggle__light toggle__dark toggle__burger">
+    <div
+      class="toggle__light toggle__burger"
+      id="light__theme-btn"
+      onclick="changeTheme()"
+    >
       <div class="sircle"></div>
     </div>
     <img class="burger__leaf" src="./images/leaf.png" alt="" />

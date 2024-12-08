@@ -3,7 +3,7 @@
 	max-width: $mobileScreen;
 	padding: 0 15px;
 	margin: 0 auto;
-	overflow: clip;
+	// overflow: clip;
 
 	// ===== Tablet screen 768px =====
 	@media screen and (min-width: $tabletScreen) {

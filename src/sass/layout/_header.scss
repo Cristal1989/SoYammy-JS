@@ -15,6 +15,10 @@
   }
 }
 
+.header.dark__theme{
+  background-position: 960px -100px;
+}
+
 .header__container {
   display: flex;
   padding-top: 28px;
@@ -57,9 +61,12 @@ text-overflow: ellipsis;
   color: $secondaryColor;
   fill: $secondaryColor;
 }
-
-
 }
+.nav__link.dark__theme {
+  color: white;
+}
+
+
 .svg__nav {
   color: $secondaryColor;
   fill: $secondaryColor;
@@ -72,6 +79,13 @@ text-overflow: ellipsis;
   margin-right: 10px;
   border: 1px solid rgba(0, 0, 0, 0.342);
   padding: 6px;
+
+  &.dark__theme{
+    @media screen and (max-width: $desctopScreen) {
+      border: 1px solid white;
+      background-color: #fff;
+  }
+  }
 }
 
 .username__link{
@@ -93,6 +107,12 @@ color: $fontBlack;
   @media screen and (max-width: $tabletScreen) {
     margin-right: 10px;
     margin-left: 40px;
+  }
+
+  &.dark__theme{
+    @media screen and (max-width: $desctopScreen) {
+      color: white;
+  }
   }
 }
 
@@ -189,21 +209,30 @@ color: $fontBlack;
   align-self: center;
   padding: 3px;
   margin-left: 20px;
-  transition: 0.5s all ease-in;
+  transition: 0.2s all ease-in;
   margin-left: 55px;
 
   @media screen and (max-width: $desctopScreen) {
     display: none;
   }
 }
-.toggle__dark{
+.toggle__light.dark__theme{
   background-color: $secondaryColor;
   justify-content: end;
-  transition: 0.5s all ease-in;
+  transition: 0.2s all ease-in;
   @media screen and (max-width: $desctopScreen) {
     display: none;
   }
 }
+
+.toggle__burger{
+  display: flex;
+
+  &.dark__theme{
+    display: flex;
+  }
+}
+
 
 .sircle{
   width: 21px;
@@ -246,6 +275,10 @@ margin-bottom: 14px;
     font-size: 60px;
     text-align: center;
   }
+
+  &.dark__theme{
+    color: #fff;
+  }
 }
 .hero__title-green {
   color:$secondaryColor;
@@ -270,6 +303,10 @@ z-index: 50;
     text-align: center;
     margin-bottom: 157px;
   }
+
+  &.dark__theme{
+    color: #fff;
+  }
 }
 .hero__content {
   display: flex;
@@ -287,6 +324,7 @@ z-index: 50;
   height: 71px;
   border-radius: 25px 50px;
   border: 1px solid rgb(129, 128, 128, 0.5);
+
   outline: none;
   padding-left: 50px;
 
@@ -314,6 +352,8 @@ text-align: left;
 
 .input__place{
   position: relative;
+  border: none;
+  outline: none;
 }
 
 .hero__resipes {
@@ -389,6 +429,10 @@ gap: 5px;
     display: none;
   }
 
+  &.dark__theme{
+    right: -50px;
+  }
+
 }
 .hero__bgsmooth {
  width: 438px;
@@ -416,7 +460,23 @@ gap: 5px;
   }
   @media screen and (max-width: $tabletScreen) {
    top: 47%;
-   right: 25%;
+   right: 10%;
+  }
+
+  &.dark__theme{
+    right: 270px;
+
+    @media screen and (max-width: $desctopScreen) {
+    width: 350px;
+    height: 350px;
+
+    top: 35%;
+    right: 15%;
+  }
+  @media screen and (max-width: $tabletScreen) {
+   top: 47%;
+   right: 10%;
+  }
   }
 }
 

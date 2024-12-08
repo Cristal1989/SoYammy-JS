@@ -27,6 +27,10 @@ margin-bottom: 50px;
   @media screen and (max-width: $tabletScreen) {
    text-align: center;
   }
+
+  &.dark__theme{
+    color: white;
+  }
 }
 
 .breakfast__list {
@@ -56,6 +60,10 @@ padding: 16px 0 16px 0;
 max-width: 268px;
 background-color: $whiteColor;
 border-radius: 8px;
+
+&.dark__theme{
+  background-color: #2A2C36;
+}
 }
 
 .breakfast__link{
@@ -63,12 +71,16 @@ border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
-  letter-spacing: -0.23999999463558197px;
+  letter-spacing: 0.3;
   text-align: center;
   color: #3E4462;
   border: none;
   border-radius: 8px;
   width: 280px;
+
+  &.dark__theme{
+    color: white;
+  }
 
   &:hover{
     color: $secondaryColor;
@@ -182,6 +194,11 @@ color: #22252A;
 background-color: #fff;
 cursor: pointer;
 transition: 0.5s all ease;
+
+&.dark__theme{
+  background-color: #2A2C36;
+  color: #fff;
+}
 
 &:hover{
   background-color: $secondaryColor;

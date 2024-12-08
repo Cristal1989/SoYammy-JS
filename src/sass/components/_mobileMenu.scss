@@ -58,10 +58,19 @@
 }
 
 .menu__btn--icon {
-  fill: currentColor;
+  // fill: currentColor;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.menu__btn-menu{
+  // fill: none;
+  fill: #585858;
+
+  &.dark__theme{
+    fill: $secondaryColor;
+  }
 }
 
 .burger__icon-place{
