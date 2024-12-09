@@ -8,6 +8,14 @@
     background-image: url("../images/myresipe/img_header-tablet.png");
   }
 }
+
+.nav__link-myresipe{
+  &.dark__theme{
+    color: $mainColor;
+    fill: $mainColor;
+  }
+}
+
 .header__myresipe{
   margin: 0;
   padding: 0;
@@ -88,6 +96,11 @@ background-color: rgba(255, 255, 255, 0.1);
 
 @media screen and (max-width: $tabletScreen) {
    font-weight: 500; 
+  }
+
+  &.dark__theme{
+    background-color: #ffffff1a;
+    color: $mainColor;
   }
 }
 .myresipe__time-place{

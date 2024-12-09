@@ -576,6 +576,14 @@ margin-bottom: 32px;
   }
 }
 
+.social__addresipe{
+  &.dark__theme{
+    &:hover{
+      background-color: $secondaryColor;
+    }
+  }
+}
+
 .resipe__follow-socialtext{
 font-family: $fontMain;
 font-size: 24px;

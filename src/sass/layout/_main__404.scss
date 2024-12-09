@@ -19,6 +19,9 @@ line-height: 24px;
 letter-spacing: -0.02em;
 text-align: left;
 margin-bottom: 14px;
+&.dark__theme{
+  color: $whiteColor;
+}
 }
 .errorpage__subtitle {
   font-family: $fontMain;
@@ -30,4 +33,8 @@ text-align: left;
 color: #817f7fb6;
 
 margin-bottom: 200px;
+
+&.dark__theme{
+  color: $whiteColor;
+}
 }

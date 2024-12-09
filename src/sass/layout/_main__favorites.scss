@@ -16,6 +16,10 @@ margin-bottom: 100px;
     line-height: 28px;
     margin-bottom: 50px;
   }
+
+  &.dark__theme{
+    color: $whiteColor;
+  }
 }
 .favorites__list {
   display: flex;
@@ -33,6 +37,10 @@ margin-bottom: 100px;
   @media screen and (max-width: $tabletScreen) {
     flex-direction: column;
     align-items: center;
+  }
+
+  &.dark__theme{
+    background-color: #30313d;
   }
 }
 .favorites__img {
@@ -69,8 +77,11 @@ margin-bottom: 100px;
   @media screen and (max-width: $tabletScreen) {
     margin-bottom: 20px;
   }
-  p{
-    font-family: $fontMain;
+
+}
+
+.favorites__subtitle-text{
+font-family: $fontMain;
 font-size: 24px;
 font-weight: 500;
 line-height: 24px;
@@ -81,6 +92,9 @@ color: #3E4462;
 @media screen and (max-width: $desctopScreen) {
     font-size: 24px;
   }
+
+  &.dark__theme{
+    color: $whiteColor;
   }
 }
 
@@ -101,15 +115,15 @@ color: #3E4462;
 }
 
 .favorites__subtitle-textresipe{
-  p{
-    font-family: $fontMain;
-font-size: 18px;
+  
+font-family: $fontMain;
+font-size: 16px;
 font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.3;
 text-align: left;
 color: #23262A;
-  }
+  
   &:not(:last-child){
     margin-bottom: 14px;
   }
@@ -118,6 +132,10 @@ color: #23262A;
   }
   @media screen and (max-width: $tabletScreen) {
    line-height: 1.4; 
+  }
+
+  &.dark__theme{
+    color: $whiteColor;
   }
 }
 .favorites__subtitle-items {
@@ -146,11 +164,15 @@ color: #3E4462;
 @media screen and (max-width: $desctopScreen) {
    font-weight: 500; 
   }
+
+  &.dark__theme{
+    color: $whiteColor;
+  }
 }
 .favorites__btn {
   padding: 18px 44px;
   border-radius: 25px 50px;
-  border: 1px solid $mainColor;
+  border: none;
   background-color: $mainColor;
   color: #FAFAFA;
 
@@ -170,6 +192,15 @@ color: #3E4462;
   @media screen and (max-width: $desctopScreen) {
     padding: 12px 32px;
   }
+
+  &.dark__theme{
+    background-color: $secondaryColor;
+    border: none;
+    &:hover{
+      background-color: #7f9936;
+      scale: 1;
+    }
+  }
 }
 
 .favorites__numbers {
@@ -188,6 +219,10 @@ color: #3E4462;
   margin-bottom: 15px;
   @media screen and (max-width: $tabletScreen) {
     width: 330px;
+  }
+
+  &.dark__theme{
+    background-color: #30313d;
   }
 }
 .favorites__numbers-item{
@@ -216,6 +251,12 @@ color: #3E4462;
     display: none;
   }
 }
+
+&.dark__theme{
+  &:hover{
+    background-color: $secondaryColor;
+  }
+}
 }
 .favorites__numbers-link {
   font-family: $fontMain;
@@ -228,6 +269,13 @@ color: #3E4462;
   text-align: center;
   border-radius: 50%;
   transition: all 0.3s ease;
+  &.dark__theme{
+    color: $whiteColor;
+  }
+
+  &:active{
+    color: $secondaryColor
+  }
 }
 .favorites__numbers-leftarrow {
   position: absolute;
