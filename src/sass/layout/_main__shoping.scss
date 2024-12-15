@@ -11,7 +11,7 @@
 font-size: 24px;
 font-weight: 500;
 line-height: 24px;
-letter-spacing: -0.23999999463558197px;
+letter-spacing: 0.3;
 color: #3E4462;
 @media screen and (max-width: $tabletScreen) {
    margin-left: 30px;
@@ -37,7 +37,6 @@ box-shadow: 1px 4px 5px rgba(0,0,0,0.1);
 }
 
 .shoping__img{
-// background-color: rgba(235, 243, 212, 0.7);
 width: 120px;
 height: 120px;
 border-radius: 8px;

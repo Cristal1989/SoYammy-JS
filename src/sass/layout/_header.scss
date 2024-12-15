@@ -69,6 +69,11 @@ text-overflow: ellipsis;
   }
 }
 
+.nav__link-burger{
+  &.dark__theme{
+    color: #fff;
+  }
+}
 
 .svg__nav {
   fill: $mainColor;
@@ -77,6 +82,10 @@ text-overflow: ellipsis;
   &.dark__theme{
     fill: $secondaryColor;
   }
+}
+
+.svg__burger{
+  margin-right: 10px;
 }
 
 .iconuser__start{

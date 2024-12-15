@@ -225,3 +225,26 @@ transition: 0.5s all ease;
   background-color: #add343;
 }
 }
+
+#name:valid{
+    border-color: #4caf50;
+}
+
+#name:invalid {
+    border-color: #f44336;
+}
+#email:valid{
+    border-color: #4caf50;
+}
+
+#email:invalid {
+    border-color: #f44336;
+}
+#password:valid{
+    border-color: #4caf50;
+}
+
+#password:invalid {
+    border-color: #f44336;
+}
+

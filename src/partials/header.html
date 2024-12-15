@@ -7,10 +7,14 @@
     </div>
     <ul class="nav">
       <li class="nav__list">
-        <a class="nav__link" href="./categories.html">Categories</a>
+        <a class="nav__link" href="./categories.html" onclick="checkDarkTheme()"
+          >Categories</a
+        >
       </li>
       <li class="nav__list">
-        <a class="nav__link" href="./add_resipe.html">Add recipes</a>
+        <a class="nav__link" href="./add_resipe.html" onclick="checkDarkTheme()"
+          >Add recipes</a
+        >
       </li>
       <li class="nav__list">
         <a class="nav__link" href="./my_resipes.html">My recipes</a>
@@ -104,7 +108,7 @@
                 class="modal__form--input"
                 placeholder="Name"
                 required
-                pattern="[a-z]{4,8}"
+                pattern="[A-Za-z0-9]{3,}"
               />
               <svg class="form__input--icon" width="18" height="18">
                 <use href="./images/svg/icons.svg#icon-user"></use>
@@ -120,29 +124,31 @@
                 autocomplete="email"
                 class="modal__form--input"
                 placeholder="Email"
+                required
               />
               <svg class="form__input--icon" width="18" height="18">
                 <use href="./images/svg/icons.svg#icon-mail"></use>
               </svg>
             </div>
-            <!-- ============== phone ============== -->
+            <!-- ============== password ============== -->
             <div class="modal__form--field">
-              <label for="tel" class="modal__form--label"></label>
+              <label for="password" class="modal__form--label"></label>
+
               <input
-                type="tel"
-                name="tel"
-                id="tel"
-                autocomplete="on"
+                type="password"
+                name="password"
+                id="password"
+                autocomplete="off"
                 class="modal__form--input"
                 placeholder="Password"
+                pattern="[[A-Za-z0-9][$%^&+=!]]{6,}"
                 required
-                pattern="[0-9]{10}"
               />
               <svg class="form__input--icon" width="18" height="18">
                 <use href="./images/svg/icons.svg#lock"></use>
               </svg>
             </div>
-            <button type="submit" class="modal__form--btn">Sign up</button>
+            <button type="submit" class="modal__form--btn">Registration</button>
           </div>
         </form>
       </div>
@@ -178,23 +184,24 @@
                 autocomplete="email"
                 class="modal__form--input"
                 placeholder="Email"
+                required
               />
               <svg class="form__input--icon" width="18" height="18">
                 <use href="./images/svg/icons.svg#icon-mail"></use>
               </svg>
             </div>
-            <!-- ============== phone ============== -->
+            <!-- ============== password ============== -->
             <div class="modal__form--field">
-              <label for="tel" class="modal__form--label"></label>
+              <label for="password" class="modal__form--label"></label>
               <input
-                type="tel"
-                name="tel"
-                id="tel"
-                autocomplete="on"
+                type="password"
+                name="password"
+                id="password"
+                autocomplete="off"
                 class="modal__form--input"
                 placeholder="Password"
                 required
-                pattern="[0-9]{10}"
+                pattern="[[A-Za-z0-9][$%^&+=!]]{6,}"
               />
               <svg class="form__input--icon" width="18" height="18">
                 <use href="./images/svg/icons.svg#lock"></use>
@@ -300,10 +307,12 @@
         <a class="nav__link-burger" href="shopping.html">Shopping list</a>
       </li>
       <li class="nav__list svg__nav">
-        <a class="nav__link-burger" href="search.html"
-          ><img class="burger__search" src="./images/svg/search.svg" alt="" />
-          Search</a
-        >
+        <a class="nav__link-burger" href="/src/search.html">
+          <svg class="svg__nav svg__burger" width="30" height="30" fill="none">
+            <use href="./images/svg/icons.svg#search"></use>
+          </svg>
+          Search
+        </a>
       </li>
     </ul>
     <div

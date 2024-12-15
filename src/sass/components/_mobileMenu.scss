@@ -26,6 +26,10 @@
   &.is-open {
     transform: translateX(0);
   }
+
+  &.dark__theme{
+    background-color: $mainColor;
+  }
 }
 
 .menu-toggle {
@@ -62,6 +66,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &.dark__theme{
+    fill: #fff;
+  }
 }
 
 .menu__btn-menu{
